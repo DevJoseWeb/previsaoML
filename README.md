@@ -1,4 +1,6 @@
-# Tensorflow.js MNIST Angular Demo
+# Tensorflow.js MNIST Angular Demo:
+
+   https://tensorflowjs-br.firebaseapp.com
 
 This demo imports an MNIST ConvNet trained in Keras Python, then makes predictions with TensorFlow.js
 
