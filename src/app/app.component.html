@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm">
+      <h3>Desenhe Aqui - </h3>
+        <div class="wrapper">
+            <canvas drawable (newImage)="predict($event)"></canvas><br>
+        </div>
+
+        <button class="btn btn-sm btn-warning" (click)="canvas.clear()">Apagar</button>
+
+    </div>
+    <div class="col-sm">
+        <h3>TensorFlow Previsões</h3>
+        <chart [data]="predictions"></chart>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm">
+        <h1>Modelo Linear</h1>
+        
+          <h4>Previsão Valor: <span class="badge badge-info">{{ prediction }}</span></h4>
+
+          <p>Básico TensorFlow linear para treinar o navegador.</p>
+        
+          <hr>
+        
+          <input type="number" (change)="linearPrediction($event.target.value)" class="form-control" placeholder="Entre com um Número Aleatório">
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+<router-outlet></router-outlet>
